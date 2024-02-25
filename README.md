@@ -1,13 +1,21 @@
 ## Hangman C++
-
-This repository contains a simple C++ implementation of the classic Hangman game. The program loads a list of words from a file, selects a random word for the player to guess, and allows the player to make guesses to reveal the hidden word. The player has a limited number of tries before the game ends.
+This repository contains a simple Hangman game implemented in C++. The game randomly selects a word from a provided list and allows players to guess letters to uncover the hidden word. Players have a limited number of tries before the hangman is fully drawn.
 
 ### Features
 
-- **Word Selection:** Loads a list of words from a file and selects a random word for the player to guess.
+- **Word Selection:** The game selects a random word from a provided list of over 172,000 words, ensuring a unique game experience each time.
 - **Guessing Mechanism:** Allows the player to make guesses to reveal the hidden word.
 - **Hangman Display:** Visual representation of the hangman's gallows and status updates as the player makes guesses.
 - **Game Over:** Ends the game when the player correctly guesses the word or runs out of tries.
+
+### Files
+
+- **hangman.cpp:** The main source file containing the Hangman game logic.
+- **hangman_header.h:** The header file containing necessary include directives and function prototypes.
+
+### Input File
+
+- **words.txt:** A text file containing over 172,000 words, ensuring a diverse selection of words for the game.
 
 ### Dependencies
 
