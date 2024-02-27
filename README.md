@@ -29,15 +29,15 @@ This repository contains a simple Hangman game implemented in C++. The game rand
 ### Usage
 
 1. **Compilation:**
-   - Compile the program using a C++ compiler such as g++:
+   - Compile the program using the command make
      ```
-     g++ main.cpp -o hangman_cpp
+     make
      ```
 
 2. **Execution:**
    - Run the compiled binary to start the Hangman game:
      ```
-     ./hangman_cpp
+     ./hangman
      ```
 
 3. **Gameplay:**
