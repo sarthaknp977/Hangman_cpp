@@ -1,4 +1,4 @@
-#include "hangman_header.h"
+#include "../include/hangman/hangman_header.h"
 
 int tries = 5;
 
@@ -58,7 +58,7 @@ bool check_guess(char guess, string random_word, string &hidden_word)
     {
         if (guess == hidden_word[i])
         {
-            found == false;
+            found = false;
             return found;
         }
         if (guess == random_word[i])
@@ -72,7 +72,7 @@ bool check_guess(char guess, string random_word, string &hidden_word)
 
 bool correct_word(string &hidden_word)
 {
-    for (int i = 0; i < hidden_word.length(); i++)
+    for (long unsigned int i = 0; i < hidden_word.length(); i++)
     {
         if (hidden_word[i] == 'X')
         {
@@ -84,7 +84,7 @@ bool correct_word(string &hidden_word)
 int main()
 {
     srand(time(NULL));
-    ifstream input_file("words.txt");
+    ifstream input_file("./resources/words.txt");
     if (!open_file(input_file))
     {
         cerr << "file not found";
